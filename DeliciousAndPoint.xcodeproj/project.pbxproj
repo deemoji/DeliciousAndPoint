@@ -1,0 +1,617 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF8601372A4B57E5007A2F77 /* DeliciousAndPointApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8601362A4B57E5007A2F77 /* DeliciousAndPointApp.swift */; };
+		EF8601392A4B57E5007A2F77 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8601382A4B57E5007A2F77 /* CategoryCell.swift */; };
+		EF86013E2A4B57EB007A2F77 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF86013D2A4B57EB007A2F77 /* Preview Assets.xcassets */; };
+		EF8601472A4B6217007A2F77 /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8601462A4B6216007A2F77 /* CategoriesView.swift */; };
+		EF8601492A4B66DB007A2F77 /* DescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8601482A4B66DA007A2F77 /* DescriptionView.swift */; };
+		EF86014B2A4CB8A6007A2F77 /* DishCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF86014A2A4CB8A6007A2F77 /* DishCell.swift */; };
+		EF86014D2A4CBAC0007A2F77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF86014C2A4CBAC0007A2F77 /* Assets.xcassets */; };
+		EF86014F2A4CBBA4007A2F77 /* DishesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF86014E2A4CBBA4007A2F77 /* DishesView.swift */; };
+		EF8601512A4E05DD007A2F77 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8601502A4E05DC007A2F77 /* Coordinator.swift */; };
+		EF8601532A4E0A96007A2F77 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8601522A4E0A96007A2F77 /* CartView.swift */; };
+		EF8601552A4ECD4D007A2F77 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8601542A4ECD4D007A2F77 /* Category.swift */; };
+		EF8601572A4ECDB3007A2F77 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8601562A4ECDB3007A2F77 /* Dish.swift */; };
+		EF8601592A4ECF11007A2F77 /* RestaurantNetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8601582A4ECF11007A2F77 /* RestaurantNetworkProvider.swift */; };
+		EF86015B2A4ED48F007A2F77 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF86015A2A4ED48F007A2F77 /* NetworkClient.swift */; };
+		EF86015D2A4ED782007A2F77 /* RestaurantRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF86015C2A4ED782007A2F77 /* RestaurantRouter.swift */; };
+		EF8601692A4EE148007A2F77 /* NetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8601682A4EE148007A2F77 /* NetworkTests.swift */; };
+		EF8601722A4EF2B8007A2F77 /* CategoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8601712A4EF2B8007A2F77 /* CategoriesViewModel.swift */; };
+		EF8601742A4F3546007A2F77 /* View+Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8601732A4F3545007A2F77 /* View+Coordinator.swift */; };
+		EF8601762A4F3602007A2F77 /* DishesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8601752A4F3602007A2F77 /* DishesViewModel.swift */; };
+		EF8601782A501E0A007A2F77 /* DishTypesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8601772A501E0A007A2F77 /* DishTypesView.swift */; };
+		EF86017A2A502814007A2F77 /* DescriptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8601792A502814007A2F77 /* DescriptionViewModel.swift */; };
+		EF86017E2A504D25007A2F77 /* ClearBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF86017D2A504D25007A2F77 /* ClearBackgroundView.swift */; };
+		EF8601822A5070CB007A2F77 /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8601812A5070CB007A2F77 /* CartViewModel.swift */; };
+		EF8601862A5073BA007A2F77 /* CartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8601852A5073B9007A2F77 /* CartCell.swift */; };
+		EF86018D2A51A826007A2F77 /* CoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF86018C2A51A826007A2F77 /* CoordinatorView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF86016A2A4EE148007A2F77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF86012B2A4B57E5007A2F77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF8601322A4B57E5007A2F77;
+			remoteInfo = DeliciousAndPoint;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF8601332A4B57E5007A2F77 /* DeliciousAndPoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeliciousAndPoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF8601362A4B57E5007A2F77 /* DeliciousAndPointApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliciousAndPointApp.swift; sourceTree = "<group>"; };
+		EF8601382A4B57E5007A2F77 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		EF86013D2A4B57EB007A2F77 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EF8601462A4B6216007A2F77 /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
+		EF8601482A4B66DA007A2F77 /* DescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionView.swift; sourceTree = "<group>"; };
+		EF86014A2A4CB8A6007A2F77 /* DishCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCell.swift; sourceTree = "<group>"; };
+		EF86014C2A4CBAC0007A2F77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF86014E2A4CBBA4007A2F77 /* DishesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishesView.swift; sourceTree = "<group>"; };
+		EF8601502A4E05DC007A2F77 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		EF8601522A4E0A96007A2F77 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		EF8601542A4ECD4D007A2F77 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		EF8601562A4ECDB3007A2F77 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
+		EF8601582A4ECF11007A2F77 /* RestaurantNetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantNetworkProvider.swift; sourceTree = "<group>"; };
+		EF86015A2A4ED48F007A2F77 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		EF86015C2A4ED782007A2F77 /* RestaurantRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantRouter.swift; sourceTree = "<group>"; };
+		EF8601662A4EE148007A2F77 /* DeliciousAndPointTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeliciousAndPointTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF8601682A4EE148007A2F77 /* NetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTests.swift; sourceTree = "<group>"; };
+		EF8601712A4EF2B8007A2F77 /* CategoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewModel.swift; sourceTree = "<group>"; };
+		EF8601732A4F3545007A2F77 /* View+Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Coordinator.swift"; sourceTree = "<group>"; };
+		EF8601752A4F3602007A2F77 /* DishesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishesViewModel.swift; sourceTree = "<group>"; };
+		EF8601772A501E0A007A2F77 /* DishTypesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishTypesView.swift; sourceTree = "<group>"; };
+		EF8601792A502814007A2F77 /* DescriptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewModel.swift; sourceTree = "<group>"; };
+		EF86017D2A504D25007A2F77 /* ClearBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearBackgroundView.swift; sourceTree = "<group>"; };
+		EF8601812A5070CB007A2F77 /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
+		EF8601852A5073B9007A2F77 /* CartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartCell.swift; sourceTree = "<group>"; };
+		EF86018C2A51A826007A2F77 /* CoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF8601302A4B57E5007A2F77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF8601632A4EE148007A2F77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF86012A2A4B57E5007A2F77 = {
+			isa = PBXGroup;
+			children = (
+				EF8601352A4B57E5007A2F77 /* DeliciousAndPoint */,
+				EF8601672A4EE148007A2F77 /* DeliciousAndPointTests */,
+				EF8601342A4B57E5007A2F77 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF8601342A4B57E5007A2F77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF8601332A4B57E5007A2F77 /* DeliciousAndPoint.app */,
+				EF8601662A4EE148007A2F77 /* DeliciousAndPointTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF8601352A4B57E5007A2F77 /* DeliciousAndPoint */ = {
+			isa = PBXGroup;
+			children = (
+				EF86018B2A51A4DE007A2F77 /* Components */,
+				EF86018A2A51A474007A2F77 /* Extensions */,
+				EF86016F2A4EF219007A2F77 /* Scenes */,
+				EF8601362A4B57E5007A2F77 /* DeliciousAndPointApp.swift */,
+				EF86013C2A4B57EB007A2F77 /* Preview Content */,
+				EF8601502A4E05DC007A2F77 /* Coordinator.swift */,
+				EF86018C2A51A826007A2F77 /* CoordinatorView.swift */,
+				EF86015F2A4EE028007A2F77 /* Models */,
+				EF86015E2A4EE00A007A2F77 /* Network */,
+				EF86014C2A4CBAC0007A2F77 /* Assets.xcassets */,
+			);
+			path = DeliciousAndPoint;
+			sourceTree = "<group>";
+		};
+		EF86013C2A4B57EB007A2F77 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EF86013D2A4B57EB007A2F77 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EF86015E2A4EE00A007A2F77 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EF8601582A4ECF11007A2F77 /* RestaurantNetworkProvider.swift */,
+				EF86015A2A4ED48F007A2F77 /* NetworkClient.swift */,
+				EF86015C2A4ED782007A2F77 /* RestaurantRouter.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EF86015F2A4EE028007A2F77 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EF8601542A4ECD4D007A2F77 /* Category.swift */,
+				EF8601562A4ECDB3007A2F77 /* Dish.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EF8601672A4EE148007A2F77 /* DeliciousAndPointTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF8601682A4EE148007A2F77 /* NetworkTests.swift */,
+			);
+			path = DeliciousAndPointTests;
+			sourceTree = "<group>";
+		};
+		EF86016F2A4EF219007A2F77 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				EF8601892A51A381007A2F77 /* Description */,
+				EF8601882A51A350007A2F77 /* Dishes */,
+				EF8601872A51A31E007A2F77 /* Cart */,
+				EF8601702A4EF229007A2F77 /* Categories */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		EF8601702A4EF229007A2F77 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				EF8601382A4B57E5007A2F77 /* CategoryCell.swift */,
+				EF8601462A4B6216007A2F77 /* CategoriesView.swift */,
+				EF8601712A4EF2B8007A2F77 /* CategoriesViewModel.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		EF8601872A51A31E007A2F77 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				EF8601812A5070CB007A2F77 /* CartViewModel.swift */,
+				EF8601522A4E0A96007A2F77 /* CartView.swift */,
+				EF8601852A5073B9007A2F77 /* CartCell.swift */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		EF8601882A51A350007A2F77 /* Dishes */ = {
+			isa = PBXGroup;
+			children = (
+				EF8601752A4F3602007A2F77 /* DishesViewModel.swift */,
+				EF86014A2A4CB8A6007A2F77 /* DishCell.swift */,
+				EF86014E2A4CBBA4007A2F77 /* DishesView.swift */,
+				EF8601772A501E0A007A2F77 /* DishTypesView.swift */,
+			);
+			path = Dishes;
+			sourceTree = "<group>";
+		};
+		EF8601892A51A381007A2F77 /* Description */ = {
+			isa = PBXGroup;
+			children = (
+				EF8601792A502814007A2F77 /* DescriptionViewModel.swift */,
+				EF8601482A4B66DA007A2F77 /* DescriptionView.swift */,
+			);
+			path = Description;
+			sourceTree = "<group>";
+		};
+		EF86018A2A51A474007A2F77 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EF8601732A4F3545007A2F77 /* View+Coordinator.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EF86018B2A51A4DE007A2F77 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				EF86017D2A504D25007A2F77 /* ClearBackgroundView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF8601322A4B57E5007A2F77 /* DeliciousAndPoint */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF8601412A4B57EB007A2F77 /* Build configuration list for PBXNativeTarget "DeliciousAndPoint" */;
+			buildPhases = (
+				EF86012F2A4B57E5007A2F77 /* Sources */,
+				EF8601302A4B57E5007A2F77 /* Frameworks */,
+				EF8601312A4B57E5007A2F77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeliciousAndPoint;
+			productName = DeliciousAndPoint;
+			productReference = EF8601332A4B57E5007A2F77 /* DeliciousAndPoint.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF8601652A4EE148007A2F77 /* DeliciousAndPointTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF86016C2A4EE148007A2F77 /* Build configuration list for PBXNativeTarget "DeliciousAndPointTests" */;
+			buildPhases = (
+				EF8601622A4EE148007A2F77 /* Sources */,
+				EF8601632A4EE148007A2F77 /* Frameworks */,
+				EF8601642A4EE148007A2F77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF86016B2A4EE148007A2F77 /* PBXTargetDependency */,
+			);
+			name = DeliciousAndPointTests;
+			productName = DeliciousAndPointTests;
+			productReference = EF8601662A4EE148007A2F77 /* DeliciousAndPointTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF86012B2A4B57E5007A2F77 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					EF8601322A4B57E5007A2F77 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					EF8601652A4EE148007A2F77 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = EF8601322A4B57E5007A2F77;
+					};
+				};
+			};
+			buildConfigurationList = EF86012E2A4B57E5007A2F77 /* Build configuration list for PBXProject "DeliciousAndPoint" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF86012A2A4B57E5007A2F77;
+			productRefGroup = EF8601342A4B57E5007A2F77 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF8601322A4B57E5007A2F77 /* DeliciousAndPoint */,
+				EF8601652A4EE148007A2F77 /* DeliciousAndPointTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF8601312A4B57E5007A2F77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF86014D2A4CBAC0007A2F77 /* Assets.xcassets in Resources */,
+				EF86013E2A4B57EB007A2F77 /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF8601642A4EE148007A2F77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF86012F2A4B57E5007A2F77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF8601862A5073BA007A2F77 /* CartCell.swift in Sources */,
+				EF8601592A4ECF11007A2F77 /* RestaurantNetworkProvider.swift in Sources */,
+				EF8601532A4E0A96007A2F77 /* CartView.swift in Sources */,
+				EF8601552A4ECD4D007A2F77 /* Category.swift in Sources */,
+				EF8601572A4ECDB3007A2F77 /* Dish.swift in Sources */,
+				EF8601512A4E05DD007A2F77 /* Coordinator.swift in Sources */,
+				EF8601472A4B6217007A2F77 /* CategoriesView.swift in Sources */,
+				EF8601492A4B66DB007A2F77 /* DescriptionView.swift in Sources */,
+				EF8601722A4EF2B8007A2F77 /* CategoriesViewModel.swift in Sources */,
+				EF8601392A4B57E5007A2F77 /* CategoryCell.swift in Sources */,
+				EF8601822A5070CB007A2F77 /* CartViewModel.swift in Sources */,
+				EF86015B2A4ED48F007A2F77 /* NetworkClient.swift in Sources */,
+				EF86015D2A4ED782007A2F77 /* RestaurantRouter.swift in Sources */,
+				EF8601762A4F3602007A2F77 /* DishesViewModel.swift in Sources */,
+				EF8601742A4F3546007A2F77 /* View+Coordinator.swift in Sources */,
+				EF86014B2A4CB8A6007A2F77 /* DishCell.swift in Sources */,
+				EF8601782A501E0A007A2F77 /* DishTypesView.swift in Sources */,
+				EF86017A2A502814007A2F77 /* DescriptionViewModel.swift in Sources */,
+				EF86014F2A4CBBA4007A2F77 /* DishesView.swift in Sources */,
+				EF86018D2A51A826007A2F77 /* CoordinatorView.swift in Sources */,
+				EF8601372A4B57E5007A2F77 /* DeliciousAndPointApp.swift in Sources */,
+				EF86017E2A504D25007A2F77 /* ClearBackgroundView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF8601622A4EE148007A2F77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF8601692A4EE148007A2F77 /* NetworkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF86016B2A4EE148007A2F77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF8601322A4B57E5007A2F77 /* DeliciousAndPoint */;
+			targetProxy = EF86016A2A4EE148007A2F77 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EF86013F2A4B57EB007A2F77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF8601402A4B57EB007A2F77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF8601422A4B57EB007A2F77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DeliciousAndPoint/Preview Content\"";
+				DEVELOPMENT_TEAM = GGBRYLM9ZW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dmitrijmartianov.DeliciousAndPoint;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF8601432A4B57EB007A2F77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DeliciousAndPoint/Preview Content\"";
+				DEVELOPMENT_TEAM = GGBRYLM9ZW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dmitrijmartianov.DeliciousAndPoint;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EF86016D2A4EE148007A2F77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GGBRYLM9ZW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dmitrijmartianov.DeliciousAndPointTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeliciousAndPoint.app/DeliciousAndPoint";
+			};
+			name = Debug;
+		};
+		EF86016E2A4EE148007A2F77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GGBRYLM9ZW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dmitrijmartianov.DeliciousAndPointTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeliciousAndPoint.app/DeliciousAndPoint";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF86012E2A4B57E5007A2F77 /* Build configuration list for PBXProject "DeliciousAndPoint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF86013F2A4B57EB007A2F77 /* Debug */,
+				EF8601402A4B57EB007A2F77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF8601412A4B57EB007A2F77 /* Build configuration list for PBXNativeTarget "DeliciousAndPoint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF8601422A4B57EB007A2F77 /* Debug */,
+				EF8601432A4B57EB007A2F77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF86016C2A4EE148007A2F77 /* Build configuration list for PBXNativeTarget "DeliciousAndPointTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF86016D2A4EE148007A2F77 /* Debug */,
+				EF86016E2A4EE148007A2F77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF86012B2A4B57E5007A2F77 /* Project object */;
+}
